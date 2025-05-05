@@ -13,17 +13,11 @@ jobs:
         run: |
           echo "Hello World!"
 
-  date_job:
-    runs-on: ubuntu-22.04
-    steps:
       - name: Share current date
         run: |
           echo "Current Date is: "
           date
 
-  directory_job:
-    runs-on: ubuntu-22.04
-    steps:
       - name: Share current directory
         run: |
           echo "Directory files listed: "
