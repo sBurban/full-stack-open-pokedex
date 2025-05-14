@@ -1,3 +1,4 @@
 dist/
 node_modules/
 .github/workflows/separated_workflows
+.env
