@@ -13,12 +13,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       - name: Install dependencies
         run: npm install
+
       - name: Check styling
         run: npm run eslint
+
       - name: Run Tests
         run : npm run test
+
+      - name: Build production files
+        run: npm run build   # 👈 build here, before e2e
+
       - name: e2e tests
         uses: cypress-io/github-action@v6
         with:
