@@ -8,5 +8,6 @@ npm install
 echo "🔧 Building the app..."
 npm run build
 
-echo "🚀 Starting the production server..."
-npm run start-prod
+# This part should be handled by Render
+# echo "🚀 Starting the production server..."
+# npm run start-prod
